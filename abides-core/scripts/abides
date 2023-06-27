@@ -98,9 +98,13 @@ def main():
     )
 
 
+    print("UPDATED KERNEL")
+    print()
     kernel = Kernel(
         random_state=np.random.RandomState(seed=1),
         log_dir="",
+        # enable agent logging
+        skip_log=False,
         **subdict(
             config,
             [
